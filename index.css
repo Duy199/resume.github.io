@@ -1,0 +1,28 @@
+img {
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+    transform: scale(1); 
+}
+
+img:hover {
+    transform: scale(1.2); 
+}
+
+.slide {
+    position: absolute !important;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Smooth fade transition */
+}
+
+.slide.active {
+    opacity: 1; /* Fade in the active slide */
+}
+
+.fade {
+    animation: fadeEffect 1s ease;
+}
+
+.content {
+    position: relative !important;
+    margin-top: 200px;
+}
